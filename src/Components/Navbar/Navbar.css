@@ -86,6 +86,7 @@ a{
         width: 50px;
     }
     .Navbar > .nav-items{
+        z-index: 10000;
         position: absolute;
         top: 60px;
         display: flex;

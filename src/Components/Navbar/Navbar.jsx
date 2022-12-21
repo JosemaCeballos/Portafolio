@@ -35,7 +35,7 @@ function Navbar() {
           {enEs ? `${"About me"}` : "Sobre mí"}
         </a>
         <a
-          href="#project"
+          href="#projects"
           className="color-specified"
           style={{ color: darkMode ? "white" : "#222" }}
         >
