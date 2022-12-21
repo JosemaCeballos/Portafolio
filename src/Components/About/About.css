@@ -63,6 +63,11 @@
     height: 70px;
 }
 
+.about-technology-img:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
 @media screen and (max-width:480px) {
     .about{
       flex-direction: column;

@@ -76,7 +76,7 @@ a{
 @media(max-width: 700px){
     .Navbar{
         justify-content: space-evenly;
-        padding-right: 25px;
+        padding-right: 30px;
     }
     a{
         font-size: 20px;
