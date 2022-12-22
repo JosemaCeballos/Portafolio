@@ -12,8 +12,10 @@ const themeReducer = (state, action) => {
         darkMode: !state.darkMode,
       };
     case "EN/ES":
-      return { ...state, 
-        enEs: !state.enEs };
+      return { 
+        ...state, 
+        enEs: !state.enEs 
+      };
     default:
       return state;
   }

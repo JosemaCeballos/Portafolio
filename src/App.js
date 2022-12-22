@@ -15,20 +15,20 @@ function App() {
 
   return (
     <>
-        <div
-          style={{
-            backgroundColor: darkMode ? "#222" : "#f8f8e5",
-            color: darkMode ? "#FFFFF0" : "#222"
-          }}
-        >
-          <Navbar />
-          <Toggle />
-          <Intro />
-          <About />
-          <Projects/>
-          <Contact />
-        <Footer/>
-        </div>
+      <div
+        style={{
+          backgroundColor: darkMode ? "#222" : "#f8f8e5",
+          color: darkMode ? "#FFFFF0" : "#222",
+        }}
+      >
+        <Navbar />
+        <Toggle />
+        <Intro />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }

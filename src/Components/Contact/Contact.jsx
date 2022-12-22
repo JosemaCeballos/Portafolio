@@ -102,30 +102,30 @@ function Contact() {
               {enEs ? `${"Do you want to contact me?"}` : "¿Deseas contactarme?"}
             </b>
             {enEs
-              ? `${"Write your message here:"}`
-              : "Escribe tu mensaje aquí:"}
+              ? `${" Write your message here:"}`
+              : " Escribe tu mensaje aquí:"}
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
               type="text"
               placeholder={enEs ? "Name" : "Nombre"}
               name="user_name"
             />
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
               type="text"
               placeholder={enEs ? "Subject" : "Asunto"}
               name="user_subject"
             />
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
               type="text"
               placeholder="Email"
               name="user_email"
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
               rows="5"
               placeholder={
                 enEs

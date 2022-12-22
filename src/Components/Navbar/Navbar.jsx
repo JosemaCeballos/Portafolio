@@ -11,6 +11,10 @@ function Navbar() {
     theme.dispatch({ type: "EN/ES" });
   };
 
+  const handleClic = () => {
+    setOpen(open ? false : true);
+  };
+
   return (
     <div className="Navbar">
       <div className="logoAndName">
@@ -24,6 +28,7 @@ function Navbar() {
           href="#sobre-mí"
           className="color-specified"
           style={{ color: darkMode ? "white" : "#222" }}
+          onClick={() => setOpen(!open)}
         >
           {enEs ? `${"Home"}` : "Inicio"}
         </a>
@@ -31,6 +36,7 @@ function Navbar() {
           href="#about-me"
           className="color-specified"
           style={{ color: darkMode ? "white" : "#222" }}
+          onClick={() => setOpen(!open)}
         >
           {enEs ? `${"About me"}` : "Sobre mí"}
         </a>
@@ -38,13 +44,15 @@ function Navbar() {
           href="#projects"
           className="color-specified"
           style={{ color: darkMode ? "white" : "#222" }}
+          onClick={() => setOpen(!open)}
         >
-           {enEs ? `${"Projects"}` : "Proyectos"}
+          {enEs ? `${"Projects"}` : "Proyectos"}
         </a>
         <a
           href="#contact"
           className="color-specified"
           style={{ color: darkMode ? "white" : "#222" }}
+          onClick={() => setOpen(!open)}
         >
           {enEs ? `${"Contact"}` : "Contacto"}
         </a>
@@ -53,7 +61,7 @@ function Navbar() {
         className={`${darkMode ? "nav-toggle2" : "nav-toggle"} ${
           open && "open"
         }`}
-        onClick={() => setOpen(!open)}
+        onClick={handleClic}
       >
         <div
           className="bar"
