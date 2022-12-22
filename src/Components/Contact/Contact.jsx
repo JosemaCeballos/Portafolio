@@ -80,7 +80,7 @@ function Contact() {
                 target="__blank"
                 className="contact-link"
               >
-                Jose Maria Ceballos
+                José Maria Ceballos
               </a>
             </div>
             <div className="contact-info-item">
@@ -99,8 +99,8 @@ function Contact() {
         <div className="contact-right">
           <p className="contact-desc">
             <b>
-              {enEs ? `${"Do you want to contact me?"}` : "Deseas contactarme?"}
-            </b>{" "}
+              {enEs ? `${"Do you want to contact me?"}` : "¿Deseas contactarme?"}
+            </b>
             {enEs
               ? `${"Write your message here:"}`
               : "Escribe tu mensaje aquí:"}
@@ -115,7 +115,7 @@ function Contact() {
             <input
               style={{ backgroundColor: darkMode && "#333" }}
               type="text"
-              placeholder={enEs ? "Reason" : "Motivo"}
+              placeholder={enEs ? "Subject" : "Asunto"}
               name="user_subject"
             />
             <input
@@ -130,7 +130,7 @@ function Contact() {
               placeholder={
                 enEs
                   ? "Write here the message..."
-                  : "Escribe aqui el mensaje..."
+                  : "Escribe aquí el mensaje..."
               }
               name="message"
             />

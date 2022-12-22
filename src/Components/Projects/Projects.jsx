@@ -47,8 +47,8 @@ function Projects() {
             <h1 className="project-title">Chilly E-Commerce</h1>
             <p>
               {enEs
-                ? `${"E-Commerce that fulfills all the functionalities of one, and also has other very special features, such as the option to build your own computer, obtaining only compatible products."}`
-                : "E-Commerce que cumple con todas las funcionalidades de una, y además cuenta con otras que son muy especiales, cómo la opción de armar tu propia computadora obteniendo solo productos compatibles."}
+                ? `${"E-Commerce that fulfills all the functionalities of one, and also has other very special features, such as the option to build your own computer, obtaining only compatible products. For the realization of this website we used all the technologies shown above."}`
+                : "E-Commerce que cumple con todas las funcionalidades de una, y además cuenta con otras que son muy especiales, cómo la opción de armar tu propia computadora obteniendo solo productos compatibles.Para la realización de esta página web se utilizo todas las tecnologías anteriormente mostradas."}
             </p>
             <div className="project-to-link">
               <a
@@ -102,10 +102,9 @@ function Projects() {
           <div className="project-medium-wrapper">
             <h1 className="project-title">Food's Api</h1>
             <p>
-              Aplicación web en la cuál se puede visualizar los climas de las
-              ciudades que uno busque a través de una searchbar. El clima que el
-              usuario obtendrá, es el clima a horario real en el que haya sido
-              buscado.
+              {enEs
+                ? `${"Application with excellent UI and UX that shows the details of your favorite recipes and allows you to create your own cards with the information of the recipe you want to create. For the realization of this website we used all the technologies shown above."}`
+                : "Aplicación con excelente UI y UX que muestra los detalles de tus recetas favoritas y permite crear tus propias tarjetas con la información de las receta que busques crear. Para la realización de esta página web se utilizo todas las tecnologías anteriormente mostradas."}
             </p>
             <div className="project-to-link">
               <a
@@ -162,8 +161,8 @@ function Projects() {
             <h1 className="project-title">Weather App</h1>
             <p>
               {enEs
-                ? `${"Web application in which you can visualize the weather of the cities you are looking for through a searchbar. The weather that the user will get is the real time weather in the city where it has been searched."}`
-                : "Aplicación web en la cuál se puede visualizar los climas de las ciudades que uno busque a través de una searchbar. El clima que el usuario obtendrá, es el clima a horario real en el que haya sido buscado."}
+                ? `${"Web application where you can visualize the weather of the cities that you search through a searchbar. The weather that the user will get is the real-time weather in the city where it has been searched."}`
+                : "Aplicación web en la cuál se puede visualizar los climas de las ciudades que uno busque a través de una barra de busqueda. El clima que el usuario obtendrá, es el clima a horario real en el que haya sido buscado."}
             </p>
             <div className="project-to-link">
               <a

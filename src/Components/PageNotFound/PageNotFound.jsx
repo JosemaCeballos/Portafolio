@@ -1,15 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./PageNotFound.css";
 
 function PageNotFound() {
   return (
-    <div>
-      <div>
-        <Link to="/">Come back</Link>
+    <div className="page-not-found">
+      <div className="back-home">
+        <a href="/" className="return-link">
+          Click here to return
+        </a>
       </div>
-      <div>
-        Page not Found
-      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }
