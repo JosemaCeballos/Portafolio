@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.cover{
+    width: 100%;
+}
+
 @media screen and (max-width: 1600px){
     .footer{
         padding-top: 50px ;

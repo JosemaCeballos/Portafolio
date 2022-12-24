@@ -6,11 +6,13 @@ function Footer() {
   const theme = useContext(ThemeContext);
   const { enEs } = theme.state;
   return (
-    <div className="footer">
-      {enEs
-        ? `${"Portfolio created by José Maria Ceballos"}`
-        : "Portafolio creado por José Maria Ceballos"}
-    </div>
+    <>
+      <div className="footer">
+        {enEs
+          ? `${"Portfolio created by José Maria Ceballos"}`
+          : "Portafolio creado por José Maria Ceballos"}
+      </div>
+    </>
   );
 }
 

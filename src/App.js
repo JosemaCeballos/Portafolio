@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import About from "./Components/About/About";
 import Intro from "./Components/Intro/Intro";
@@ -19,6 +18,7 @@ function App() {
         style={{
           backgroundColor: darkMode ? "#222" : "#f8f8e5",
           color: darkMode ? "#FFFFF0" : "#222",
+          overflowX: "hidden",
         }}
       >
         <Navbar />

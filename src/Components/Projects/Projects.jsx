@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
 import "./Projects.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Viewer from "react-viewer";
+import { Carousel } from "react-responsive-carousel";
 import { ThemeContext } from "../../context";
 
 function Projects() {
@@ -68,34 +70,36 @@ function Projects() {
                 Deploy
               </a>
             </div>
-            <div className="project-con-img">
+            <Carousel
+              className="project-con-img"
+              showArrows={false}
+              thumbWidth={60}
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={5000}
+              showStatus={false}
+              width="82%"
+              onClickItem={() => {
+                setVisible(true);
+              }}
+            >
               {imagenes.map((image, index) => {
-                return (
-                  <img
-                    key={index}
-                    src={image}
-                    alt="project-img"
-                    className="project-img2"
-                    onClick={() => {
-                      setVisible(true);
-                    }}
-                  />
-                );
+                return <img key={index} src={image} alt="project-img" />;
               })}
-              <Viewer
-                visible={visible}
-                onClose={() => {
-                  setVisible(false);
-                }}
-                images={[
-                  { src: imagenes[0], alt: "home-page" },
-                  { src: imagenes[1], alt: "store-page" },
-                  { src: imagenes[2], alt: "detail-page" },
-                  { src: imagenes[3], alt: "panel-admin-page" },
-                ]}
-                zoomable={true}
-              />
-            </div>
+            </Carousel>
+            <Viewer
+              visible={visible}
+              onClose={() => {
+                setVisible(false);
+              }}
+              images={[
+                { src: imagenes[0], alt: "home-page" },
+                { src: imagenes[1], alt: "store-page" },
+                { src: imagenes[2], alt: "detail-page" },
+                { src: imagenes[3], alt: "panel-admin-page" },
+              ]}
+              zoomable={true}
+            />
           </div>
         </div>
         <div className="project-medium">
@@ -124,36 +128,38 @@ function Projects() {
                 Deploy
               </a>
             </div>
-            <div className="project-con-img">
+            <Carousel
+              className="project-con-img2"
+              showArrows={false}
+              thumbWidth={60}
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={5000}
+              showStatus={false}
+              width="78%"
+              onClickItem={() => {
+                setVisible3(true);
+              }}
+            >
               {imagenes3.slice(0, 4).map((image, index) => {
-                return (
-                  <img
-                    key={index}
-                    src={image}
-                    alt="project-img"
-                    className="project-img2"
-                    onClick={() => {
-                      setVisible3(true);
-                    }}
-                  />
-                );
+                return <img key={index} src={image} alt="project-img" />;
               })}
-              <Viewer
-                visible={visible3}
-                onClose={() => {
-                  setVisible3(false);
-                }}
-                images={[
-                  { src: imagenes3[0], alt: "landing-page" },
-                  { src: imagenes3[1], alt: "recipes-page" },
-                  { src: imagenes3[2], alt: "detail-recipe-page" },
-                  { src: imagenes3[3], alt: "create-recipe" },
-                  { src: imagenes3[4], alt: "recipes-responsive-page" },
-                  { src: imagenes3[5], alt: "detail-responsive-page" },
-                ]}
-                zoomable={true}
-              />
-            </div>
+            </Carousel>
+            <Viewer
+              visible={visible3}
+              onClose={() => {
+                setVisible3(false);
+              }}
+              images={[
+                { src: imagenes3[0], alt: "landing-page" },
+                { src: imagenes3[1], alt: "recipes-page" },
+                { src: imagenes3[2], alt: "detail-recipe-page" },
+                { src: imagenes3[3], alt: "create-recipe" },
+                { src: imagenes3[4], alt: "recipes-responsive-page" },
+                { src: imagenes3[5], alt: "detail-responsive-page" },
+              ]}
+              zoomable={true}
+            />
           </div>
         </div>
         <div className="project-right">
@@ -161,8 +167,8 @@ function Projects() {
             <h1 className="project-title">Weather App</h1>
             <p>
               {enEs
-                ? `${"Web application where you can visualize the weather of the cities that you search through a searchbar. The weather that the user will get is the real-time weather in the city where it has been searched."}`
-                : "Aplicación web en la cuál se puede visualizar los climas de las ciudades que uno busque a través de una barra de busqueda. El clima que el usuario obtendrá, es el clima a horario real en el que haya sido buscado."}
+                ? `${"Web application where you can visualize the weather of the cities that you search through a searchbar. The weather that the user will get is the real-time weather in the city where it has been searched. The app has a responsive version and is adapted to all types of devices"}`
+                : "Aplicación web en la cuál se puede visualizar los climas de las ciudades que uno busque a través de una barra de busqueda. El clima que el usuario obtendrá, es el clima a horario real en el que haya sido buscado. La app cuenta con una versión responsive y esta adaptada a todo tipo de dispositivos."}
             </p>
             <div className="project-to-link">
               <a
@@ -182,21 +188,29 @@ function Projects() {
                 Deploy
               </a>
             </div>
-            <div className="project-con-img">
-              {imagenes2.slice(0, 4).map((image, index) => {
+            <Carousel
+              className="project-con-img3"
+              showArrows={false}
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={5000}
+              showStatus={false}
+              width="78%"
+              onClickItem={() => {
+                setVisible2(true);
+              }}
+            >
+              {imagenes2.slice(0, 2).map((image, index) => {
                 return (
                   <img
                     key={index}
                     src={image}
                     alt="project-img"
-                    className="project-img2"
-                    onClick={() => {
-                      setVisible2(true);
-                    }}
                   />
                 );
               })}
-              <Viewer
+            </Carousel>
+            <Viewer
                 visible={visible2}
                 onClose={() => {
                   setVisible2(false);
@@ -209,7 +223,6 @@ function Projects() {
                 ]}
                 zoomable={true}
               />
-            </div>
           </div>
         </div>
       </div>

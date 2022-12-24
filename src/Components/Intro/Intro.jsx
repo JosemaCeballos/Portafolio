@@ -7,8 +7,6 @@ function Intro() {
   const theme = useContext(ThemeContext);
   const { enEs, darkMode } = theme.state;
 
-  console.log(enEs, darkMode);
-
   return (
     <div className="info" id="sobre-mí">
       <div className="info-left">
@@ -36,13 +34,6 @@ function Intro() {
               : "Diseño y desarrollo servicios para clientes de todos los tamaños, especializada en la creación de sitios web modernos y con estilo, servicios web y tiendas en línea."}
           </p>
           <div className="info-to-link">
-            <a
-              href="/curriculum"
-              target="__blank"
-              style={{ color: darkMode ? "white" : "#222" }}
-            >
-              {enEs ? "See CV" : "Ver CV"}
-            </a>
             <a
               href={require("../../img/CV José Maria Ceballos.pdf")}
               id="enlaceDescargarPDF"
