@@ -54,7 +54,7 @@ function Projects() {
             </p>
             <div className="project-to-link">
               <a
-                href="https://github.com/cinthiapiera/PF-Chilly"
+                href="https://github.com/Ecommerce-Chilly/PF-Chilly"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}
@@ -112,7 +112,7 @@ function Projects() {
             </p>
             <div className="project-to-link">
               <a
-                href="https://github.com/JosemaCeballos/Weather-App"
+                href="https://github.com/JosemaCeballos/PI-Foods/tree/main/PI%20Foods/PI-Food-main"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}
@@ -120,7 +120,7 @@ function Projects() {
                 {enEs ? `${"Repository"}` : "Repositorio"}
               </a>
               <a
-                href="https://github.com/JosemaCeballos/Weather-App"
+                href="https://github.com/JosemaCeballos/PI-Foods/tree/main/PI%20Foods/PI-Food-main"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}
@@ -129,7 +129,7 @@ function Projects() {
               </a>
             </div>
             <Carousel
-              className="project-con-img2"
+              className="project-con-img"
               showArrows={false}
               thumbWidth={60}
               autoPlay={true}
@@ -172,7 +172,7 @@ function Projects() {
             </p>
             <div className="project-to-link">
               <a
-                href="https://github.com/JosemaCeballos/PI-Foods/tree/main/PI%20Foods/PI-Food-main"
+                href="https://github.com/JosemaCeballos/Weather-App"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}
@@ -180,7 +180,7 @@ function Projects() {
                 {enEs ? `${"Repository"}` : "Repositorio"}
               </a>
               <a
-                href="https://github.com/JosemaCeballos/PI-Foods/tree/main/PI%20Foods/PI-Food-main"
+                href="http://weather-app-jmc.website"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}
@@ -189,7 +189,7 @@ function Projects() {
               </a>
             </div>
             <Carousel
-              className="project-con-img3"
+              className="project-con-img"
               showArrows={false}
               autoPlay={true}
               infiniteLoop={true}
