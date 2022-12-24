@@ -73,12 +73,11 @@ function Projects() {
             <Carousel
               className="project-con-img"
               showArrows={false}
-              thumbWidth={60}
               autoPlay={true}
               infiniteLoop={true}
               interval={5000}
               showStatus={false}
-              width="82%"
+              width="100%"
               onClickItem={() => {
                 setVisible(true);
               }}
@@ -131,12 +130,11 @@ function Projects() {
             <Carousel
               className="project-con-img"
               showArrows={false}
-              thumbWidth={60}
               autoPlay={true}
               infiniteLoop={true}
               interval={5000}
               showStatus={false}
-              width="78%"
+              width="100%"
               onClickItem={() => {
                 setVisible3(true);
               }}
@@ -195,7 +193,7 @@ function Projects() {
               infiniteLoop={true}
               interval={5000}
               showStatus={false}
-              width="78%"
+              width="100%"
               onClickItem={() => {
                 setVisible2(true);
               }}
