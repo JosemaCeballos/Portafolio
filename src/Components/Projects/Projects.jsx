@@ -111,7 +111,7 @@ function Projects() {
             </p>
             <div className="project-to-link">
               <a
-                href="https://github.com/JosemaCeballos/PI-Foods/tree/main/PI%20Foods/PI-Food-main"
+                href="https://github.com/JosemaCeballos/PI-Foods"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}
