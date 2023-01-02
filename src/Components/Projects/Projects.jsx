@@ -106,8 +106,8 @@ function Projects() {
             <h1 className="project-title">Food's Api</h1>
             <p>
               {enEs
-                ? `${"Application with excellent UI and UX that shows the details of your favorite recipes and allows you to create your own cards with the information of the recipe you want to create. For the realization of this website we used all the technologies shown above."}`
-                : "Aplicación con excelente UI y UX que muestra los detalles de tus recetas favoritas y permite crear tus propias tarjetas con la información de las receta que busques crear. Para la realización de esta página web se utilizo todas las tecnologías anteriormente mostradas."}
+                ? `${"Application with excellent UI and UX that shows the details of your favorite recipes and allows you to create your own cards with the information of the recipe you want to create. For the realization of this website we used all the technologies shown above. The app has a responsive version and is adapted to all types of devices"}`
+                : "Aplicación con excelente UI y UX que muestra los detalles de tus recetas favoritas y permite crear tus propias tarjetas con la información de las receta que busques crear. Para la realización de esta página web se utilizo todas las tecnologías anteriormente mostradas y esta adaptada a todo tipo de dispositivos."}
             </p>
             <div className="project-to-link">
               <a
@@ -119,7 +119,7 @@ function Projects() {
                 {enEs ? `${"Repository"}` : "Repositorio"}
               </a>
               <a
-                href="https://github.com/JosemaCeballos/PI-Foods/tree/main/PI%20Foods/PI-Food-main"
+                href="https://github.com/JosemaCeballos/PI-Foods"
                 target="__blank"
                 className="project-link"
                 style={{ color: darkMode ? "white" : "#222" }}

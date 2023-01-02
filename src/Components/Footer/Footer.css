@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.none{
+    display: none;
+}
+
 @media screen and (max-width: 1600px){
     .footer{
         padding-top: 50px ;

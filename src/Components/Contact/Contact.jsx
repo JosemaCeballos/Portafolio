@@ -60,7 +60,7 @@ function Contact() {
                 className="contact-icon"
               />
               <a
-                style={{ color: darkMode && "white" }}
+                style={{ color: darkMode ? "white" : "#222" }}
                 href="http://wa.me/+5493816856060"
                 target="__blank"
                 className="contact-link"
@@ -75,7 +75,7 @@ function Contact() {
                 className="contact-icon"
               />
               <a
-                style={{ color: darkMode && "white" }}
+                style={{ color: darkMode ? "white" : "#222" }}
                 href="https://www.linkedin.com/in/jose-maria-ceballos-a3379524a/"
                 target="__blank"
                 className="contact-link"
@@ -86,7 +86,7 @@ function Contact() {
             <div className="contact-info-item">
               <img src={github} alt="github-logo" className="contact-icon" />
               <a
-                style={{ color: darkMode && "white" }}
+                style={{ color: darkMode ? "white" : "#222" }}
                 href="https://github.com/JosemaCeballos"
                 target="__blank"
                 className="contact-link"
@@ -99,7 +99,9 @@ function Contact() {
         <div className="contact-right">
           <p className="contact-desc">
             <b>
-              {enEs ? `${"Do you want to contact me?"}` : "¿Deseas contactarme?"}
+              {enEs
+                ? `${"Do you want to contact me?"}`
+                : "¿Deseas contactarme?"}
             </b>
             {enEs
               ? `${" Write your message here:"}`
@@ -107,25 +109,37 @@ function Contact() {
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
-              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#FFFFFF" : "#222",
+              }}
               type="text"
               placeholder={enEs ? "Name" : "Nombre"}
               name="user_name"
             />
             <input
-              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#FFFFFF" : "#222",
+              }}
               type="text"
               placeholder={enEs ? "Subject" : "Asunto"}
               name="user_subject"
             />
             <input
-              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#FFFFFF" : "#222",
+              }}
               type="text"
               placeholder="Email"
               name="user_email"
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333", color: darkMode ? "#FFFFFF" : "#222" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#FFFFFF" : "#222",
+              }}
               rows="5"
               placeholder={
                 enEs

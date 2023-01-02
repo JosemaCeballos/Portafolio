@@ -4,7 +4,7 @@ import Me from "../../img/facherito.jpeg";
 import html from "../../img/html.png";
 import css from "../../img/css.png";
 import javascript from "../../img/javascript.png";
-import sass from "../../img/sass.png";
+import typescript from "../../img/typescript.png";
 import react from "../../img/react.png";
 import redux from "../../img/redux.png";
 import nodejs from "../../img/nodejs.png";
@@ -42,7 +42,7 @@ function About() {
         <div className="about-technology">
           <img src={html} alt="html-logo" className="about-technology-img" />
           <img src={css} alt="css-logo" className="about-technology-img" />
-          <img src={sass} alt="sass-logo" className="about-technology-img" />
+          <img src={typescript} alt="typescript-logo" className="about-technology-img" />
           <img
             src={javascript}
             alt="javascript-logo"

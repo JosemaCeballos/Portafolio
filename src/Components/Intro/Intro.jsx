@@ -30,8 +30,8 @@ function Intro() {
           </div>
           <p className="info-desc">
             {enEs
-              ? "Design and development services for clients of all sizes, specializing in the creation of modern and stylish websites, web services and online stores."
-              : "Diseño y desarrollo servicios para clientes de todos los tamaños, especializada en la creación de sitios web modernos y con estilo, servicios web y tiendas en línea."}
+              ? "I am a web developer who focuses on the small details, and on simple, accessible and adaptable designs. Design and development services for clients of all sizes, specializing in the creation of modern and stylish websites, web services and online stores."
+              : "Soy un desarrollador web que se enfoca en los pequeños detalles y en diseños simples, accesibles y adaptables. Diseño y desarrollo servicios para clientes de todos los tamaños, especializada en la creación de sitios web modernos y con estilo, servicios web y tiendas en línea."}
           </p>
           <div className="info-to-link">
             <a
